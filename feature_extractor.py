@@ -67,14 +67,14 @@ def feature_extractor_video(video_path, key_points_path):
     np.save(os.path.join(vid_folder, 'right_hand.npy'), right_hand_kp)
 
 
-vid_folder = "F:/Datasets/raw_videos"
-key_points_path = "F:/Datasets/kp"
+vid_folder = "raw_videos"
+key_points_path = "features/"
 if not os.path.exists(key_points_path):
     os.makedirs(key_points_path)
 vids = os.listdir(vid_folder)
 
-vids_start = 0
-vids_end = 2
+vids_start = 2
+vids_end = 2000
 
 
 for vid in tqdm(vids[vids_start:vids_end]):
