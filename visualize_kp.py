@@ -8,7 +8,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_holistic = mp.solutions.holistic
 
-base_url = 'F:/Datasets/kp/_0fO5ETSwyg_3-5-rgb_front'
+base_url = 'C:\\Users\\mu979926\\Desktop\\Asad\\sign-pose-sequence-generation\\features\\raw_videos\\--7E2sU6zP4_10-5-rgb_front'
 
 pose = np.load(os.path.join(base_url, 'pose.npy'), allow_pickle=True)
 face = np.load(os.path.join(base_url, 'face.npy'), allow_pickle=True)
