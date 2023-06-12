@@ -20,15 +20,15 @@ total_frames = pose.shape[0]
 
 def draw_styled_landmarks(image, pose, face, left_hand, right_hand):
     # Draw face connections
-    mp_drawing.draw_landmarks(image, face, mp_holistic.FACEMESH_TESSELATION, 
-                             mp_drawing.DrawingSpec(color=(80,110,10), thickness=1, circle_radius=1), 
-                             mp_drawing.DrawingSpec(color=(80,256,121), thickness=1, circle_radius=1)
-                             ) 
-    # Draw pose connections
-    mp_drawing.draw_landmarks(image, pose, mp_holistic.POSE_CONNECTIONS,
-                             mp_drawing.DrawingSpec(color=(80,22,10), thickness=1, circle_radius=1), 
-                             mp_drawing.DrawingSpec(color=(80,44,121), thickness=1, circle_radius=1)
-                             ) 
+    # mp_drawing.draw_landmarks(image, face, mp_holistic.FACEMESH_TESSELATION, 
+    #                          mp_drawing.DrawingSpec(color=(80,110,10), thickness=1, circle_radius=1), 
+    #                          mp_drawing.DrawingSpec(color=(80,256,121), thickness=1, circle_radius=1)
+    #                          ) 
+    # # Draw pose connections
+    # mp_drawing.draw_landmarks(image, pose, mp_holistic.POSE_CONNECTIONS,
+    #                          mp_drawing.DrawingSpec(color=(80,22,10), thickness=1, circle_radius=1), 
+    #                          mp_drawing.DrawingSpec(color=(80,44,121), thickness=1, circle_radius=1)
+    #                          ) 
     # Draw left hand connections
     mp_drawing.draw_landmarks(image, left_hand, mp_holistic.HAND_CONNECTIONS, 
                              mp_drawing.DrawingSpec(color=(121,22,76), thickness=1, circle_radius=1), 
