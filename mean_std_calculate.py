@@ -15,9 +15,6 @@ for dataset_file in tqdm(dataset_files):
     accumalator = np.concatenate((accumalator, dataset), axis=0)
     max_length = max(max_length, dataset.shape[0])
     i += 1
-    if i % 100 == 0:
-        print('i: ', i)
-        print('-------------------')
 
 accumalator = accumalator[1:, :]
 mean = np.mean(accumalator, axis=0)
